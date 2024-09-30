@@ -14,7 +14,7 @@ This project is a simple web application that allows users to manage their tasks
 
 1. Clone the repository to your local environment:
    ```bash
-   git clone https://github.com/your-username/task_manager.git
+   git clone https://github.com/e3ayd/task_manager.git
    
 ```bash
 task_manager/
@@ -30,3 +30,24 @@ task_manager/
 ├── style.css            # CSS for styling
 └── README.md            # Project description and setup instructions
 ```
+```bash
+CREATE DATABASE task_manager;
+
+USE task_manager;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    title VARCHAR(255),
+    description TEXT,
+    due_date DATE,
+    priority ENUM('low', 'medium', 'high'),
+    status ENUM('pending', 'completed'),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
