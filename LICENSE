@@ -1,0 +1,20 @@
+
+---
+
+### Core Files and Their Functionality:
+
+- **index.php**: Displays the list of tasks for the logged-in user.
+- **login.php**: Provides a form for users to log into their accounts.
+- **register.php**: Allows new users to create an account.
+- **add_task.php**: Contains a form to add a new task with details like title, description, due date, and priority.
+- **edit_task.php**: Enables users to edit existing tasks.
+- **delete_task.php**: Handles the deletion of tasks.
+- **complete_task.php**: Marks a task as completed.
+- **db.php**: Contains the database connection configuration.
+- **style.css**: Styles the application, ensuring a clean and responsive design.
+
+---
+
+### Next Steps:
+We can start by setting up the **database**, followed by creating the **authentication system** (register and login), then move on to the **task management features**. Let me know if you want me to implement a specific part first or if you need help with the structure or specific functionalities!
+
